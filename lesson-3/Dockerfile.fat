@@ -1,0 +1,11 @@
+FROM python:3.11
+
+WORKDIR /app
+
+# Копируем всё содержимое папки в контейнер
+COPY . .
+
+# Устанавливаем зависимости прямо в основной слой
+RUN pip install --no-cache-dir torch torchvision pillow
+
+ENTRYPOINT ["python", "inference.py"]

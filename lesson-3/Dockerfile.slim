@@ -1,0 +1,22 @@
+# Stage 1: Builder
+FROM python:3.11-slim as builder
+WORKDIR /build
+RUN pip install --no-cache-dir --prefix=/install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir --prefix=/install pillow
+
+# Stage 2: Final
+FROM python:3.11-slim
+WORKDIR /app
+
+# Системные библиотеки для Pillow
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libglib2.0-0 libsm6 libxrender1 libxext6 \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Копируем только установленные пакеты
+COPY --from=builder /install /usr/local
+# Копируем только то, что нужно для работы
+COPY inference.py .
+COPY model.pt .
+
+ENTRYPOINT ["python", "inference.py"]

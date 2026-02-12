@@ -1,0 +1,979 @@
+--- Начинаем проверку среды: Thu Feb 12 09:07:59 CET 2026 ---
+✅ Docker найден: Docker version 24.0.6, build ed223bc
+⏳ Обновляю Python через brew...
+==> Auto-updating Homebrew...
+Adjust how often this is run with HOMEBREW_AUTO_UPDATE_SECS or disable with
+HOMEBREW_NO_AUTO_UPDATE. Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Downloading https://ghcr.io/v2/homebrew/core/portable-ruby/blobs/sha256:80c194381e990a4967a1ae44b8242b688e6a17ab590865a38671137677411469
+##O#-  #                                                                                                                          #=#=-#   #                                                                                                                        #=O#- #     #                                                                                                                                                                                                                                                   0.0%###                                                                                                                           2.5%######                                                                                                                        5.1%########                                                                                                                      6.9%############                                                                                                                  9.9%###############                                                                                                              12.2%##################                                                                                                           14.6%####################                                                                                                         16.8%#######################                                                                                                      19.2%##########################                                                                                                   21.5%#############################                                                                                                23.8%###############################                                                                                              26.0%##################################                                                                                           28.3%#####################################                                                                                        30.7%########################################                                                                                     32.9%###########################################                                                                                  35.2%##############################################                                                                               37.7%################################################                                                                             39.8%###################################################                                                                          42.0%######################################################                                                                       44.1%#########################################################                                                                    46.4%###########################################################                                                                  48.6%##############################################################                                                               51.0%#################################################################                                                            53.2%####################################################################                                                         55.4%#######################################################################                                                      57.9%#########################################################################                                                    60.1%############################################################################                                                 62.4%###############################################################################                                              64.7%##################################################################################                                           66.9%#####################################################################################                                        69.2%########################################################################################                                     71.6%##########################################################################################                                   74.0%#############################################################################################                                76.4%################################################################################################                             78.6%###################################################################################################                          81.0%######################################################################################################                       83.3%#########################################################################################################                    85.5%###########################################################################################################                  87.7%##############################################################################################################               89.9%#################################################################################################################            92.2%####################################################################################################################         94.4%#######################################################################################################################      96.8%#########################################################################################################################    99.0%########################################################################################################################### 100.0%
+==> Pouring portable-ruby-3.4.8.catalina.bottle.tar.gz
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+act_runner: Action runner for Gitea based on Gitea's fork of act
+actions-up: Tool to update GitHub Actions to latest versions with SHA pinning
+addlicense: Scan directories recursively to ensure source files have license headers
+adplay: Command-line player for OPL2 music
+agent-browser: Browser automation CLI for AI agents
+aiac: Artificial Intelligence Infrastructure-as-Code Generator
+aicommit2: Reactive CLI that generates commit messages for Git and Jujutsu with AI
+aiken: Modern smart contract platform for Cardano
+air: Fast and opinionated formatter for R code
+airtable-mcp-server: MCP Server for Airtable
+aklomp-base64: Fast Base64 stream encoder/decoder in C99, with SIMD acceleration
+anchor: Solana Program Framework
+ansible@12: Automate deployment, configuration, and upgrading
+any2fasta: Convert various sequence formats to FASTA
+anyzig: Universal zig executable that runs any version of zig
+apache-polaris: Interoperable, open source catalog for Apache Iceberg
+apigeecli: Apigee management API command-line interface
+arcadedb: Multi-Model DBMS: Graph, Document, Key/Value, Search, Time Series, Vector
+archgw: CLI for Arch Gateway
+arp-scan-rs: ARP scan tool written in Rust for fast local network scans
+asm-lsp: Language server for NASM/GAS/GO Assembly
+assimp@5: Portable library for importing many well-known 3D model formats
+astra: Command-Line Interface for DataStax Astra
+atomic_queue: C++14 lock-free queues
+attempt-cli: CLI for retrying fallible commands
+audiowaveform: Generate waveform data and render waveform images from audio files
+auto-editor: Effort free video editing!
+av1an: Cross-platform command-line encoding framework
+aws-spiffe-workload-helper: Helper for providing AWS credentials to workloads using their SPIFFE identity
+ayatana-ido: Ayatana Indicator Display Objects
+azure-dev: Developer CLI that provides commands for working with Azure resources
+azurite: Lightweight server clone of Azure Storage that simulates it locally
+b4: Tool to work with public-inbox and patch archives
+backgroundremover: Remove background from images and video using AI
+backlog-md: Markdown‑native Task Manager & Kanban visualizer for any Git repository
+badread: Long read simulator that can imitate many types of read problems
+bb-cli: Bitbucket Rest API CLI written in pure PHP
+beads: Memory upgrade for your coding agent
+beads_viewer: Terminal-based UI for the Beads issue tracker
+bedtk: Simple toolset for BED files
+bom: Utility to generate SPDX-compliant Bill of Materials manifests
+bookokrat: Terminal EPUB Book Reader
+brush: Bourne RUsty SHell (command interpreter)
+bstring: Fork of Paul Hsieh's Better String Library
+btllib: Bioinformatics Technology Lab common code library
+bulletty: Pretty feed reader (ATOM/RSS) that stores articles in Markdown files
+bumpp: Interactive CLI that bumps your version numbers and more
+bunster: Compile shell scripts to static binaries
+burrow: Kafka Consumer Lag Checking
+caesiumclt: Fast and efficient lossy and/or lossless image compression tool
+cagent: Agent Builder and Runtime by Docker Engineering
+cai: CLI tool for prompting LLMs
+calm-cli: CLI allows you to interact with the Common Architecture Language Model (CALM)
+cargo-careful: Execute Rust code carefully, with extra checking along the way
+cargo-clone: Cargo subcommand to fetch the source code of a Rust crate
+cargo-component: Create WebAssembly components based on the component model proposal
+cargo-features-manager: TUI like cli tool to manage the features of your rust-project dependencies
+cargo-geiger: Detects usage of unsafe Rust in a Rust crate and its dependencies
+carl: Calendar for the command-line
+ccextractor: Tool for extracting closed captions from video files
+ccusage: CLI tool for analyzing Claude Code usage from local JSONL files
+cek: Explore the (overlay) filesystem and layers of OCI container images
+changelogen: Generate Beautiful Changelogs using Conventional Commits
+chawan: TUI web browser with CSS, inline image and JavaScript support
+chrome-devtools-mcp: Chrome DevTools for coding agents
+cinecli: Browse, inspect, and launch movie torrents directly from your terminal
+classifier: Text classification with Bayesian, LSI, Logistic Regression, and kNN
+claude-cmd: Claude Code Commands Manager
+claude-code-router: Tool to route Claude Code requests to different models and customize any request
+claude-code-templates: CLI tool for configuring and monitoring Claude Code
+claude-hooks: Hook system for Claude Code
+claudekit: Intelligent guardrails and workflow automation for Claude Code
+clipper2: Polygon clipping and offsetting library
+clippy: Copy files from your terminal that actually paste into GUI apps
+cliproxyapi: Wrap Gemini CLI, Codex, Claude Code, Qwen Code as an API service
+codanna: Code intelligence system with semantic search
+codebook-lsp: Code-aware spell checker language server
+codex-acp: Use Codex from ACP-compatible clients such as Zed!
+cogapp: Small bits of Python computation for static files
+config-file-validator: CLI tool to validate different configuration file types
+container: Create and run Linux containers using lightweight virtual machines
+container-canary: Test and validate container requirements against versioned manifests
+container-compose: Manage Apple Container with Docker Compose files
+context7-mcp: Up-to-date code documentation for LLMs and AI code editors
+copyparty: Portable file server
+corepack: Package acting as bridge between Node projects and their package managers
+cozyhr: Cozy wrapper around Helm and Flux CD for local development
+cpptrace: Simple, portable, and self-contained stacktrace library for C++11 and newer
+cronboard: Terminal-based dashboard for managing cron jobs locally and on servers
+ctags-lsp: LSP implementation using universal-ctags as backend
+ctre: Compile-time PCRE-compatible regular expression matcher for C++
+ctrld: Highly configurable, multi-protocol DNS forwarding proxy
+custom-install: Install CIA files directly to Nintendo 3DS SD card
+dagu: Lightweight and powerful workflow engine
+damask-grid: Grid solver of DAMASK - Multi-physics crystal plasticity simulation package
+darker: Apply Black formatting only in regions changed since last commit
+dash-mpd-cli: Download media content from a DASH-MPEG or DASH-WebM MPD manifest
+dbcsr: Distributed Block Compressed Sparse Row matrix library
+deck: Creates slide deck using Markdown and Google Slides
+decker: HyperCard-like multimedia sketchpad
+depot: Build your Docker images in the cloud
+desed: Debugger for Sed
+devcockpit: TUI system monitor for Apple Silicon
+dexidp: OpenID Connect Identity and OAuth 2.0 Provider
+diagram: CLI app to convert ASCII arts into hand drawn diagrams
+diffnav: Git diff pager based on delta but with a file tree
+dnglab: Camera RAW to DNG file format converter
+dnote: Simple command-line notebook
+dnspyre: CLI tool for a high QPS DNS benchmark
+docker-compose-langserver: Language service for Docker Compose documents
+docker-debug: Use new container attach on already container go on debug
+docker-language-server: Language server for Dockerfiles, Compose files, and Bake files
+docmd: Minimal Markdown documentation generator
+doge: Command-line DNS client
+doh: Stand-alone DNS-over-HTTPS resolver using libcurl
+domain-check: CLI tool for checking domain availability using RDAP and WHOIS protocols
+dotnet@9: .NET Core
+dovi_convert: Dolby Vision Profile 7 to 8.1 MKV converter
+doxx: Terminal document viewer for .docx files
+dqlite: Embeddable, replicated and fault-tolerant SQLite-powered engine
+dstp: Run common networking tests against your site
+dumbpipe: Unix pipes between devices
+durdraw: Versatile ASCII and ANSI Art text editor for drawing in the terminal
+e1s: TUI for managing AWS ECS, inspired by k9s
+eask-cli: CLI for building, running, testing, and managing your Emacs Lisp dependencies
+eigen@3: C++ template library for linear algebra
+ekphos: Terminal-based markdown research tool inspired by Obsidian
+electric: Real-time sync for Postgres
+emmylua_ls: Lua Language Server
+endlessh: SSH tarpit that slowly sends an endless banner
+entt: Fast and reliable entity-component system for C++
+erlang-language-platform: LSP server and CLI for the Erlang programming language
+errcheck: Finds silently ignored errors in Go code
+execstack: Utility to set/clear/query executable stack bit
+faceprints: Detect and label images of faces using local Vision.framework models
+fake-gcs-server: Emulator for Google Cloud Storage API
+fakesteak: ASCII Matrix-like steak demo
+faketty: Wrapper to exec a command in a pty, even if redirecting the output
+fastmcp: Fast, Pythonic way to build MCP servers and clients
+fastrace: Dependency-free traceroute implementation in pure C
+fence: Lightweight sandbox for commands with network and filesystem restrictions
+fennel-ls: Language Server for Fennel
+fernflower: Advanced decompiler for Java bytecode
+ffmate: FFmpeg automation layer
+ffmpeg-full: Play, record, convert, and stream many audio and video codecs
+ffmpeg@7: Play, record, convert, and stream audio and video
+filebrowser: Web File Browser
+filen-cli: Interface with Filen, an end-to-end encrypted cloud storage service
+fjira: Fuzzy-find cli jira interface
+flecs: Fast entity component system for C & C++
+flexget: Multipurpose automation tool for content
+fnox: Fort Knox for your secrets - flexible secret management tool
+forgejo: Self-hosted lightweight software forge
+forgejo-cli: CLI tool for interacting with Forgejo
+framework-tool-tui: TUI for controlling and monitoring Framework Computers hardware
+fresh-editor: Text editor for your terminal: easy, powerful and fast
+fx-upscale: Metal-powered video upscaling
+fzf-tab: Replace zsh completion selection menu with fzf
+garage: S3 object store so reliable you can run it outside datacenters
+gastown: Multi-agent workspace manager
+gbox: Provides environments for AI Agents to operate computer and mobile devices
+gcl: GNU Common Lisp
+gemini-cli: Interact with Google Gemini AI models from the command-line
+getparty: Multi-part HTTP download manager
+ggc: Modern Git CLI
+ghalint: GitHub Actions linter
+ghc@9.12: Glorious Glasgow Haskell Compilation System
+ghidra: Multi-platform software reverse engineering framework
+git-get: Better way to clone, organize and manage multiple git repositories
+git-pages: Scalable static site server for Git forges
+git-pages-cli: Tool for publishing a site to a git-pages server
+git-xet: Git LFS plugin that uploads and downloads using the Xet protocol
+gitea-mcp-server: Interactive with Gitea instances with MCP
+gitingest: Turn any Git repository into a prompt-friendly text ingest for LLMs
+gitlab-ci-linter: Command-line tool to lint GitLab CI YAML files
+gitlab-release-cli: Toolset to create, retrieve and update releases on GitLab
+gitlogue: Cinematic Git commit replay tool
+gitmux: Git status in tmux status bar
+gitnr: Create `.gitignore` using templates from TopTal, GitHub or your own collection
+global-arrays: Partitioned Global Address Space (PGAS) library for distributed arrays
+glom: Declarative object transformer and formatter, for conglomerating nested data
+gnome-papers: Document viewer for PDF and other document formats aimed at the GNOME desktop
+gnuastro: Astronomical data manipulation and analysis utilities and libraries
+go-air: Live reload for Go apps
+go-librespot: Spotify client
+go-passbolt-cli: CLI for passbolt
+go-rice: Easily embed resources like HTML, JS, CSS, images, and templates in Go
+go@1.24: Open source programming language to build simple/reliable/efficient software
+goat: General purpose AT Protocol CLI in Go
+gocheat: TUI Cheatsheet for keybindings, hotkeys and more
+goclone: Website Cloner
+gogcli: Google Suite CLI
+gonzo: Log analysis TUI
+goodls: CLI tool to download shared files and folders from Google Drive
+gotun: Lightweight HTTP proxy over SSH
+gpgmepp: C++ bindings for gpgme
+gpgmepy: Python bindings for gpgme
+gphotos-uploader-cli: Command-line tool to mass upload media folders to Google Photos
+gradle@8: Open-source build automation tool based on the Groovy and Kotlin DSL
+granted: Easiest way to access your cloud
+graphqlite: SQLite graph database extension
+gravitino: High-performance, geo-distributed, and federated metadata lake
+gruyere: TUI program for viewing and killing processes listening on ports
+gtl: Greg's Template Library of useful classes
+gtrash: Featureful Trash CLI manager: alternative to rm and trash-cli
+gup: Update binaries installed by go install
+gwctl: CLI for managing and inspecting Gateway API resources in Kubernetes clusters
+hack-browser-data: Command-line tool for decrypting and exporting browser data
+hapless: Run and manage background processes
+haraka: Fast, highly extensible, and event driven SMTP server
+harbor-cli: CLI for Harbor container registry
+hayagriva: Bibliography management tool
+hdr10plus_tool: CLI utility to work with HDR10+ in HEVC files
+hdrhistogram_c: C port of the HdrHistogram
+headscale-cli: CLI for headscale, an open-source implementation of the Tailscale control server
+headson: Head/tail for structured data
+helix-db: Open-source graph-vector database built from scratch in Rust
+helm@3: Kubernetes package manager
+hexhog: Hex viewer/editor
+hf-mcp-server: MCP Server for Hugging Face
+hierarchy-builder: High level commands to declare a hierarchy based on packed classes
+hindent: Haskell pretty printer
+html-to-markdown: Transforms HTML (even entire websites) into clean, readable Markdown
+httptap: HTTP request visualizer with phase-by-phase timing breakdown
+ic-wasm: CLI tool for performing Wasm transformations specific to ICP canisters
+icp-cli: Development tool for building and deploying canisters on ICP
+icu4c@78: C/C++ and Java libraries for Unicode and globalization
+ifopt: Light-weight C++ Interface to Nonlinear Programming Solvers
+igrep: Interactive grep
+imagemagick-full: Tools and libraries to manipulate images in many formats
+imagineer: Image processing and conversion from the terminal
+influxdb@2: Time series, events, and metrics database
+install-nothing: Simulates installing things but doesn't actually install anything
+intelli-shell: Like IntelliSense, but for shells
+jiratui: Textual User Interface for interacting with Atlassian Jira from your shell
+joyce: Emulates the Amstrad PCW on Unix, Windows and macOS
+jq-lsp: Jq language server
+jqfmt: Opinionated formatter for jq
+jqp: TUI playground to experiment and play with jq
+jsonfmt: Like gofmt, but for JSON files
+kafkactl-aws-plugin: AWS Plugin for kafkactl
+kafkactl-azure-plugin: Azure Plugin for kafkactl
+kagent: Kubernetes native framework for building AI agents
+kanata-tray: System tray for kanata keyboard remapper
+karakeep: CLI tool for self-hostable bookmark-everything app karakeep
+kbt: Keyboard tester in terminal
+kekkai: File integrity monitoring tool
+khaos: Kafka traffic simulator for observability and chaos engineering
+kibi: Text editor in ≤1024 lines of code, written in Rust
+kimi-cli: CLI agent for MoonshotAI Kimi platform
+kingfisher: MongoDB's blazingly fast secret scanning and validation tool
+kissat: Bare metal SAT solver
+klog: Command-line tool for time tracking in a human-readable, plain-text file format
+kokkos: C++ Performance Portability Ecosystem for parallel execution and abstraction
+komac: Community Manifest Creator for Windows Package Manager (WinGet)
+krane: Kubernetes deploy tool with rollout verification
+ktea: Kafka TUI client
+kubefwd: Bulk port forwarding Kubernetes services for local development
+kubernetes-cli@1.33: Kubernetes command-line interface
+kubernetes-cli@1.34: Kubernetes command-line interface
+kubernetes-mcp-server: MCP server for Kubernetes
+kyua: Testing framework for infrastructure software
+labctl: CLI tool for interacting with iximiuz labs and playgrounds
+ladybug: Embedded graph database built for query speed and scalability
+lakekeeper: Apache Iceberg REST Catalog
+lazycontainer: Terminal UI for Apple Containers
+lazyssh: Terminal-based SSH manager
+ldcli: CLI for managing LaunchDarkly feature flags
+leetsolv: CLI tool for DSA problem revision with spaced repetition
+libaegis: Portable C implementations of the AEGIS family of encryption algorithms
+libayatana-appindicator: Ayatana Application Indicators Shared Library
+libayatana-indicator: Ayatana Indicators Shared Library
+libcaption: Free open-source CEA608 / CEA708 closed-caption encoder/decoder
+libcpucycles: Microlibrary for counting CPU cycles
+libdatrie: Double-Array Trie Library
+libdbusmenu: GLib and Gtk Implementation of the DBusMenu protocol
+libdecor: Client-side decorations library for Wayland client
+libevdev: Wrapper library for evdev devices
+libigloo: Generic C framework used and developed by the Icecast project
+libjodycode: Shared code used by several utilities written by Jody Bruchon
+libks: Foundational support for signalwire C products
+libngtcp2: IETF QUIC protocol implementation
+libnpupnp: C++ base UPnP library, derived from Portable UPnP, a.k.a libupnp
+libpq@17: Postgres C API library
+libptytty: Library for OS-independent pseudo-TTY management
+libselinux: SELinux library and simple utilities
+libsepol: SELinux binary policy manipulation library
+libthai: Thai language support library
+libudfread: Universal Disk Format reader
+libupnpp: C++ wrapper for libnpupnp
+limine: Modern, advanced, portable, multiprotocol bootloader and boot manager
+lispkit: Scheme framework for extension and scripting languages on macOS and iOS
+litehtml: Fast and lightweight HTML/CSS rendering engine
+litra: Control Logitech Litra lights from the command-line
+livereload: Local web server in Python
+lld@20: LLVM Project Linker
+llhttp: Port of http_parser to llparse
+llvm@20: Next-gen compiler infrastructure
+lnk: Git-native dotfiles management that doesn't suck
+lolcrab: Make your console colorful, with OpenSimplex noise
+lsr: Ls but with io_uring
+lstr: Fast, minimalist directory tree viewer
+lue-reader: Terminal eBook reader with text-to-speech and multi-format support
+lunarml: Standard ML compiler that produces Lua/JavaScript
+lunasvg: SVG rendering and manipulation library in C++
+lutgen: Blazingly fast interpolated LUT generator and applicator for color palettes
+mac-cleanup-go: TUI macOS cleaner that scans caches/logs and lets you select what to delete
+mac-cleanup-py: Python cleanup script for macOS
+macchanger: Change your mac address, for macOS
+magics: ECMWF's meteorological plotting software
+magika: Fast and accurate AI powered file content types detection
+maigret: Collect a dossier on a person by username from thousands of sites
+mail-deduplicate: CLI to deduplicate mails from mail boxes
+manifold: Geometry library for topological robustness
+mapscii: Whole World In Your Console
+mariadb@11.8: Drop-in replacement for MySQL
+mark: Sync your markdown files with Confluence pages
+matcha: Daily digest generator for your RSS feeds
+mbedtls@3: Cryptographic & SSL/TLS library
+mcat: Terminal image, video, directory, and Markdown viewer
+mcp-atlassian: MCP server for Atlassian tools (Confluence, Jira)
+mcp-get: CLI for discovering, installing, and managing MCP servers
+mcp-google-sheets: MCP server integrates with your Google Drive and Google Sheets
+mcp-grafana: MCP server for Grafana
+mcp-inspector: Visual testing tool for MCP servers
+mcp-proxy: Bridge between Streamable HTTP and stdio MCP transports
+mcp-publisher: Publisher CLI tool for the Official Model Context Protocol (MCP) Registry
+mcp-scan: Constrain, log and scan your MCP connections for security vulnerabilities
+mcp-server-chart: MCP with 25+ @antvis charts for visualization, generation, and analysis
+mcp-server-kubernetes: MCP Server for kubernetes management commands
+mcphost: CLI host for LLMs to interact with tools via MCP
+mcptools: CLI for interacting with MCP servers using both stdio and HTTP transport
+mdfried: Terminal markdown viewer
+mdserve: Fast markdown preview server with live reload and theme support
+media-control: Control and observe media playback from the command-line
+melt: Backup and restore Ed25519 SSH keys with seed words
+memtier_benchmark: Redis and Memcache traffic generation and benchmarking tool
+mermaid-cli: CLI for Mermaid library
+min-lang: Small but practical concatenative programming language and shell
+minify: Minifier for HTML, CSS, JS, JSON, SVG, and XML
+minizign: Minisign reimplemented in Zig
+mistral-vibe: Minimal CLI coding agent
+mitama-cpp-result: Provides `result<T, E>` and `maybe<T>` and monadic functions for them
+mk: Wrapper for auto-detecting build and test commands in a repository
+mklittlefs: Creates LittleFS images for ESP8266, ESP32, Pico RP2040, and RP2350
+mlc: Check for broken links in markup files
+mlx-c: C API for MLX
+mlx-lm: Run LLMs with MLX
+mole: Deep clean and optimize your Mac
+moodle-dl: Downloads course content fast from Moodle (e.g., lecture PDFs)
+moribito: TUI for LDAP Viewing/Queries
+mpremote: Tool for interacting remotely with MicroPython devices
+mq: Jq-like command-line tool for markdown processing
+msedit: Simple text editor with clickable interface
+msolve: Library for Polynomial System Solving through Algebraic Methods
+mufetch: Neofetch-style music cli
+mysql-to-sqlite3: Transfer data from MySQL to SQLite
+n8n-mcp: MCP for Claude Desktop, Claude Code, Windsurf, Cursor to build n8n workflows
+nanoarrow: Helpers for Arrow C Data & Arrow C Stream interfaces
+nanobot: Build MCP Agents
+nativefiledialog-extended: Native file dialog library with C and C++ bindings
+neo4j-mcp: Neo4j official Model Context Protocol server for AI tools
+nessie: Transactional Catalog for Data Lakes with Git-like semantics
+netscanner: Network scanner with features like WiFi scanning, packetdump and more
+netshow: Interactive network connection monitor with friendly service names
+nextflow: Reproducible scientific workflows
+ni: Selects the right Node package manager based on lockfiles
+nifi-toolkit: Command-line utilities to setup and support NiFi
+nixfmt: Command-line tool to format Nix language code
+nkt: TUI for fast and simple interacting with your BibLaTeX database
+node@24: Open-source, cross-platform JavaScript runtime environment
+notion-mcp-server: MCP Server for Notion
+npq: Audit npm packages before you install them
+nuxi: Nuxt CLI (nuxi) for creating and managing Nuxt projects
+nyan: Colorizing `cat` command with syntax highlighting
+oasis: CLI for interacting with the Oasis Protocol network
+oatpp: Light and powerful C++ web framework
+octodns: Tools for managing DNS across multiple providers
+odiff: Very fast SIMD-first image comparison library (with nodejs API)
+omekasy: Converts alphanumeric input to various Unicode styles
+omnara: Talk to Your AI Agents from Anywhere
+onigmo: Regular expressions library forked from Oniguruma
+openapi: CLI tools for working with OpenAPI, Arazzo and Overlay specifications
+openapv: Open Advanced Professional Video Codec
+openblas64: Optimized BLAS library
+opencode: AI coding agent, built for the terminal
+openlist: New AList fork addressing anti-trust issues
+openskills: Universal skills loader for AI coding agents
+openssl@3.5: Cryptography and SSL/TLS Toolkit
+ovsx: Command-line interface for Eclipse Open VSX
+oxfmt: High-performance formatting tool for JavaScript and TypeScript
+pake: Turn any webpage into a desktop app with Rust with ease
+papeer: Convert websites into eBooks and Markdown
+papis: Powerful command-line document and bibliography manager
+parqeye: Peek inside Parquet files right from your terminal
+patchpal: AI Assisted Patch Backporting Tool Frontend
+pelican: Static site generator that supports Markdown and reST syntax
+permify: Open-source authorization service & policy engine based on Google Zanzibar
+pg-schema-diff: Diff Postgres schemas and generating SQL migrations
+pgroll: Postgres zero-downtime migrations made easy
+pgslice: Postgres partitioning as easy as pie
+pgstream: PostgreSQL replication with DDL changes
+phantom: CLI tool for seamless parallel development with Git worktrees
+php@8.4: General-purpose scripting language
+picoruby: Smallest Ruby implementation for microcontrollers
+pipewire: Server and user space API to deal with multimedia pipelines
+pixlet: App runtime and UX toolkit for pixel-based apps
+plakar: Create backups with compression, encryption and deduplication
+playwright-cli: CLI for Playwright: record/generate code, inspect selectors, take screenshots
+playwright-mcp: MCP server for Playwright
+plutobook: Paged HTML Rendering Library
+plutoprint: Generate PDFs and Images from HTML
+plutovg: Tiny 2D vector graphics library in C
+pocket-tts: Text-to-speech application designed to run efficiently on CPUs
+podcast-archiver: Archive all episodes from your favorite podcasts
+portable-libffi: Portable Foreign Function Interface library
+portable-libxcrypt: Extended crypt library for descrypt, md5crypt, bcrypt, and others
+portable-libyaml: YAML Parser
+portable-openssl: Cryptography and SSL/TLS Toolkit
+portable-ruby: Powerful, clean, object-oriented scripting language
+portable-zlib: General-purpose lossless data-compression library
+postgres-language-server: Language Server for Postgres
+postgresql@18: Object-relational database system
+precice: Coupling library for partitioned multi-physics simulations
+privatebin-cli: CLI for creating and managing PrivateBin pastes
+protozero: Minimalist protocol buffer decoder and encoder in C++
+pulp-cli: Command-line interface for Pulp 3
+pvetui: Terminal UI for Proxmox VE
+py7zr: 7-zip in Python
+pyrefly: Fast type checker and IDE for Python
+pyscn: Intelligent Python Code Quality Analyzer
+python-gdbm@3.14: Python interface to gdbm
+python-tk@3.14: Python interface to Tcl/Tk
+python@3.14: Interpreted, interactive, object-oriented programming language
+pytr: Use TradeRepublic in terminal and mass download all documents
+q: Tiny command-line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
+qcoro6: C++ Coroutines for Qt
+qman: Modern man page viewer
+qo: Interactive minimalist TUI to query JSON, CSV, and TSV using SQL
+qqqa: Fast, stateless LLM for your shell: qq answers; qa runs commands
+qrkey: Generate and recover QR codes from files for offline private key backup
+qt3d: Provides functionality for near-realtime simulation systems
+qt5compat: Qt 5 Core APIs that were removed in Qt 6
+qtbase: Cross-platform application and UI framework
+qtcharts: UI Components for displaying visually pleasing charts
+qtconnectivity: Provides access to Bluetooth hardware
+qtdatavis3d: Provides functionality for 3D visualization
+qtdeclarative: QML, Qt Quick and several related modules
+qtgraphs: Provides functionality for 2D and 3D graphs
+qtgrpc: Provides support for communicating with gRPC services
+qthttpserver: Framework for embedding an HTTP server into a Qt application
+qtimageformats: Plugins for additional image formats: TIFF, MNG, TGA, WBMP
+qtlanguageserver: Implementation of the Language Server Protocol and JSON-RPC
+qtlocation: Provides C++ interfaces to retrieve location and navigational information
+qtlottie: Display graphics and animations exported by the Bodymovin plugin
+qtmultimedia: Provides APIs for playing back and recording audiovisual content
+qtnetworkauth: Provides support for OAuth-based authorization to online services
+qtpositioning: Provides access to position, satellite info and area monitoring classes
+qtquick3d: Provides a high-level API for creating 3D content or UIs based on Qt Quick
+qtquick3dphysics: High-level QML module adding physical simulation capabilities to Qt Quick 3D
+qtquickeffectmaker: Tool to create custom Qt Quick shader effects
+qtquicktimeline: Enables keyframe-based animations and parameterization
+qtremoteobjects: Provides APIs for inter-process communication
+qtscxml: Provides functionality to create state machines from SCXML files
+qtsensors: Provides access to sensors via QML and C++ interfaces
+qtserialbus: Provides access to serial industrial bus interfaces
+qtserialport: Provides classes to interact with hardware and virtual serial ports
+qtshadertools: Provides tools for the cross-platform Qt shader pipeline
+qtspeech: Enables access to text-to-speech engines
+qtsvg: Classes for displaying the contents of SVG files
+qttools: Facilitate the design, development, testing and deployment of applications
+qttranslations: Qt translation catalogs
+qtvirtualkeyboard: Provides an input framework and reference keyboard frontend
+qtwayland: Wayland platform plugin and QtWaylandCompositor API
+qtwebchannel: Bridges the gap between Qt applications and HTML/JavaScript
+qtwebengine: Provides functionality for rendering regions of dynamic web content
+qtwebsockets: Provides WebSocket communication compliant with RFC 6455
+qtwebview: Displays web content in a QML application
+quadcastrgb: Set RGB lights on HyperX QuadCast S and Duocast microphones
+quint: Core tool for the Quint specification language
+qwen-code: AI-powered command-line workflow tool for developers
+rad: Modern CLI scripts made easy
+radicle: Sovereign code forge built on Git
+radvd: IPv6 Router Advertisement Daemon
+rails-mcp-server: MCP server for Rails applications
+ralph-orchestrator: Multi-agent orchestration framework for autonomous AI task completion
+recur: Retry a command with exponential backoff and jitter
+reddix: Reddit, refined for the terminal
+redis@8.2: Persistent key-value database, with built-in net interface
+redu: Ncdu for your restic repository
+repeater: Flashcard program that uses spaced repetition
+resterm: Terminal client for .http/.rest files with HTTP, GraphQL, and gRPC support
+rggen: Code generation tool for control and status registers
+rig-r: R Installation Manager
+rmpc: Terminal based Media Player Client with album art support
+rmrfrs: Filesystem cleaning tool
+rnp: High performance C++ OpenPGP library used by Mozilla Thunderbird
+rockcraft: Tool to create OCI images using the language from Snapcraft and Charmcraft
+rocq-elpi: Elpi extension language for Rocq
+rolesanywhere-credential-helper: Manages getting temporary security credentials from IAM Roles Anywhere
+rqbit: Fast command-line bittorrent client and server
+rsql: CLI for relational databases and common data file formats
+ruby@3.4: Powerful, clean, object-oriented scripting language
+rulesync: Unified AI rules management CLI tool
+rumdl: Markdown Linter and Formatter written in Rust
+run-kit: Universal multi-language runner and smart REPL
+rv: Ruby version manager
+rv-r: Declarative R package manager
+salesforce-mcp: MCP Server for interacting with Salesforce instances
+sandvault: Run AI agents isolated in a sandboxed macOS user account
+sarif-tools: Set of command-line tools and Python library for working with SARIF files
+save3ds_fuse: Extract/Import/FUSE for 3DS save/extdata/database
+scdl: Command-line tool to download music from SoundCloud
+secretspec: Declarative secrets management tool
+seqan3: Modern C++ library for sequence analysis
+sheenbidi: Fast and stable implementation of the Unicode Bidirectional Algorithm
+sherif: Opinionated, zero-config linter for JavaScript monorepos
+shiki: Beautiful yet powerful syntax highlighter
+shimmy: Small local inference server with OpenAI-compatible GGUF endpoints
+shortest: AI-powered natural language end-to-end testing framework
+signalwire-client-c: SignalWire C Client SDK
+skillshare: Sync skills across AI CLI tools
+slack-mcp-server: Powerful MCP Slack Server with multiple transports and smart history fetch logic
+slicot: Fortran subroutines library for systems and control
+snitch: Prettier way to inspect network connections
+snooze: Run a command at a particular time
+somo: Human-friendly alternative to netstat for socket and port monitoring
+sox_ng: Sound eXchange NG
+specify: Toolkit to help you get started with Spec-Driven Development
+spice-server: Implements the server side of the SPICE protocol
+spiffe-helper: Tool that can be used to retrieve and manage SVIDs on behalf of a workload
+sprocket: Bioinformatics workflow engine built on the Workflow Description Language (WDL)
+sqlite-rsync: SQLite remote copy tool
+sqlite3-to-mysql: Transfer data from SQLite to MySQL
+standardebooks: Tools for producing ebook files
+static-web-apps-cli: SWA CLI serves as a local development tool for Azure Static Web Apps
+stormy: Minimal, customizable and neofetch-like weather CLI based on rainy
+strands-agents-sops: Standard Operating Procedures for AI agents using natural language
+stu: TUI explorer application for Amazon S3 (AWS S3)
+supabase: Open source Firebase alternative
+supabase-mcp-server: MCP Server for Supabase
+superseedr: BitTorrent Client in your Terminal
+svt-vp9: Scalable Video Technology for VP9 Encoder
+svu: Semantic version utility
+swag: Automatically generate RESTful API documentation with Swagger 2.0 for Go
+swift-section: CLI tool for parsing mach-o files to obtain Swift information
+talm: Manage Talos Linux configurations the GitOps way
+taskline: Tasks, boards & notes for the command-line habitat
+taze: Modern cli tool that keeps your deps fresh
+tdd-guard: Automated TDD enforcement for Claude Code
+teamtype: Peer-to-peer, editor-agnostic collaborative editing of local text files
+termshot: Creates screenshots based on terminal command output
+termsvg: Record, share and export your terminal as a animated SVG image
+terraform-mcp-server: MCP server for Terraform
+terratag: CLI to automate tagging for AWS, Azure & GCP resources in Terraform
+teslamate: Self-hosted data logger for your Tesla
+tfclean: Remove applied moved block, import block, etc
+tfplugingen-openapi: OpenAPI to Terraform Provider Code Generation Specification
+tfstate-lookup: Lookup resource attributes in tfstate
+tftp-now: Single-binary TFTP server and client that you can use right now
+thorvg: Lightweight portable library used for drawing vector-based scenes and animations
+tiledb: Universal storage engine
+tiny-remapper: Tiny, efficient tool for remapping JAR files using "Tiny"-format mappings
+tkrzw: Set of implementations of DBM
+tock: Powerful time tracking tool for the command-line
+tofu-ls: OpenTofu Language Server
+toktop: LLM usage monitor in terminal
+tombi: TOML formatter, linter and language server
+topydo: Todo list application using the todo.txt format
+torrra: Find and download torrents without leaving your CLI
+tpix: Simple terminal image viewer using the Kitty graphics protocol
+tracetest: Build integration and end-to-end tests
+transifex-cli: Transifex command-line client
+tree-sitter-cli: Parser generator tool
+tree-sitter@0.25: Incremental parsing library
+treemd: TUI and CLI dual pane markdown viewer
+tronbyt-server: Manage your apps on your Tronbyt (flashed Tidbyt) completely locally
+try-rs: Temporary workspace manager for fast experimentation in the terminal
+ts_query_ls: LSP implementation for Tree-sitter's query files
+tscriptify: Golang struct to TypeScript class/interface converter
+tuios: Terminal UI OS (Terminal Multiplexer)
+tweakcc: Customize your Claude Code themes, thinking verbs, and more
+two-ms: Detect secrets in files and communication platforms
+ty: Extremely fast Python type checker, written in Rust
+typtea: Minimal terminal-based typing speed tester
+unitycatalog: Open, Multi-modal Catalog for Data & AI
+uvwasi: WASI syscall API built atop libuv
+vacuum: World's fastest OpenAPI & Swagger linter
+vampire: High-performance theorem prover
+varlock: Add declarative schema to .env files using @env-spec decorator comments
+vgo: Project scaffolder for Go, written in Go
+vibe-log-cli: CLI tool for analyzing Claude Code sessions
+vibecheck: AI-powered git commit assistant written in Go
+videoalchemy: Toolkit expanding video processing capabilities
+vineflower: Java decompiler
+volcano-cli: CLI for Volcano, Cloud Native Batch System
+vsd: Download video streams over HTTP, DASH (.mpd), and HLS (.m3u8)
+vtcode: CLI Semantic Coding Agent
+vtsls: LSP wrapper for typescript extension of vscode
+wait4x: Wait for a port or a service to enter the requested state
+wal-g: Archival restoration tool for databases
+wasm-bindgen: Facilitating high-level interactions between Wasm modules and JavaScript
+wassette: Security-oriented runtime that runs WebAssembly Components via MCP
+wayback: Archiving tool integrated with various archival services
+wgpu-native: Native WebGPU implementation based on wgpu-core
+whosthere: LAN discovery tool with a modern TUI written in Go
+wifitui: Fast featureful friendly wifi terminal UI
+wik: View Wikipedia pages from your terminal
+wishlist: Single entrypoint for multiple SSH endpoints
+witr: Why is this running?
+worktrunk: CLI for Git worktree management, designed for parallel AI agent workflows
+wuchale: Protobuf-like i18n from plain code
+wuppiefuzz: Coverage-guided REST API fuzzer developed on top of LibAFL
+wxwidgets@3.2: Cross-platform C++ GUI toolkit
+xcp: Fast & lightweight command-line tool for managing Xcode projects, built in Swift
+xcsift: Swift tool to parse xcodebuild output for coding agents
+xleak: Terminal Excel viewer with an interactive TUI
+yaml2json: Command-line tool convert from YAML to JSON
+yamlresume: Resumes as code in YAML
+yap: On-device audio transcription using Speech.framework
+yek: Fast Rust based tool to serialize text-based files for LLM consumption
+yuque-dl: Knowledge base downloader for Yuque
+zig@0.14: Programming language designed for robustness, optimality, and clarity
+zsv: Tabular data swiss-army knife CLI
+zuban: Python language server and type checker, written in Rust
+
+You have 27 outdated formulae installed.
+
+Warning: You are using macOS 12.
+We (and Apple) do not provide support for this old version.
+You may have better luck with MacPorts which supports older versions of macOS:
+  https://www.macports.org
+
+This is a Tier 3 configuration:
+  https://docs.brew.sh/Support-Tiers#tier-3
+You can report Tier 3 unrelated issues to Homebrew/* repositories!
+Read the above document before opening any issues or PRs.
+
+==> Fetching downloads for: python@3.11
+✔︎ API Source python@3.11.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/43e88de993779824dd36f168d73b96acdabdd275/Formula/o/openssl@3.rb
+Already downloaded: /Users/admin/Library/Caches/Homebrew/downloads/addde20a3f475f502a47b21dfc657e670b3b18bc08a6ef44f19722a59b18f185--openssl@3.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/43e88de993779824dd36f168d73b96acdabdd275/Formula/r/readline.rb
+Already downloaded: /Users/admin/Library/Caches/Homebrew/downloads/84cf3113c2b6a433e2b763afd8adf226690495ba5f691d95c937e645763f91f4--readline.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/43e88de993779824dd36f168d73b96acdabdd275/Formula/s/sqlite.rb
+Already downloaded: /Users/admin/Library/Caches/Homebrew/downloads/c9f8ed544aaddfb6a3a7f36e49f912d56340d123c114e3c37a09957105c7bc94--sqlite.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/43e88de993779824dd36f168d73b96acdabdd275/Formula/x/xz.rb
+Already downloaded: /Users/admin/Library/Caches/Homebrew/downloads/7d0ada71e9c32dba8d7d57788bd180d951a9cd0aae0a8f842ebc9f869c95f55a--xz.rb
+==> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/43e88de993779824dd36f168d73b96acdabdd275/Formula/p/pkgconf.rb
+Already downloaded: /Users/admin/Library/Caches/Homebrew/downloads/1d03f07ca85ea12a6ba584a7377dc34bdd1797c7b16290f459e5b39f624fe910--pkgconf.rb
+✔︎ Bottle Manifest ca-certificates (2025-12-02)
+✔︎ Bottle ca-certificates (2025-12-02)
+✔︎ API Source openssl@3.rb
+✔︎ Formula openssl@3 (3.6.1)
+✔︎ API Source readline.rb
+✔︎ Patch readline83-001
+✔︎ Patch readline83-002
+✔︎ Patch readline83-003
+✔︎ Formula readline (8.3.3)
+✔︎ API Source sqlite.rb
+✔︎ API Source xz.rb
+✔︎ Formula xz (5.8.2)
+✔︎ API Source pkgconf.rb
+✔︎ Formula pkgconf (2.5.1)
+✔︎ Resource python@3.11--flit-core
+✔︎ Resource python@3.11--packaging
+✔︎ Resource python@3.11--pip
+✔︎ Resource python@3.11--setuptools
+✔︎ Resource python@3.11--wheel
+✔︎ Patch 3.11-sysconfig.diff
+✔︎ Patch 3.10-distutils-scheme.diff
+✔︎ Formula sqlite (3.51.2)
+✔︎ Formula python@3.11 (3.11.14)
+==> Installing dependencies for python@3.11: pkgconf, ca-certificates, openssl@3, readline, sqlite and xz
+==> Installing python@3.11 dependency: pkgconf
+[34m==>[0m [1m./configure --disable-silent-rules --with-pkg-config-dir=/usr/local/lib/pkgc[0m
+[34m==>[0m [1mmake[0m
+[34m==>[0m [1mmake install[0m
+🍺  /usr/local/Cellar/pkgconf/2.5.1: 28 files, 469.9KB, built in 17 seconds
+==> Installing python@3.11 dependency: ca-certificates
+==> Pouring ca-certificates--2025-12-02.all.bottle.1.tar.gz
+[34m==>[0m [1mRegenerating CA certificate bundle from keychain, this may take a while...[0m
+🍺  /usr/local/Cellar/ca-certificates/2025-12-02: 4 files, 236.4KB
+==> Installing python@3.11 dependency: openssl@3
+[34m==>[0m [1mperl ./Configure --prefix=/usr/local/Cellar/openssl@3/3.6.1 --openssldir=/us[0m
+[34m==>[0m [1mmake[0m
+[34m==>[0m [1mmake install MANDIR=/usr/local/Cellar/openssl@3/3.6.1/share/man MANSUFFIX=ss[0m
+[34m==>[0m [1mmake HARNESS_JOBS=8 test TESTS=-test_afalg[0m
+dWarning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall openssl@3
+==> Summary
+🍺  /usr/local/Cellar/openssl@3/3.6.1: 7,615 files, 38.0MB, built in 8 minutes 38 seconds
+==> Installing python@3.11 dependency: readline
+[34m==>[0m [1mPatching[0m
+[34m==>[0m [1mApplying readline83-001[0m
+[34m==>[0m [1mApplying readline83-002[0m
+[34m==>[0m [1mApplying ftp.gnu.org[0m
+[34m==>[0m [1m./configure --with-curses[0m
+[34m==>[0m [1mmake install SHLIB_LIBS=-lcurses[0m
+🍺  /usr/local/Cellar/readline/8.3.3: 56 files, 2.6MB, built in 26 seconds
+==> Installing python@3.11 dependency: sqlite
+[34m==>[0m [1m./configure --enable-readline --disable-editline --enable-session --with-rea[0m
+[34m==>[0m [1mmake install[0m
+🍺  /usr/local/Cellar/sqlite/3.51.2_1: 13 files, 5.2MB, built in 35 seconds
+==> Installing python@3.11 dependency: xz
+[34m==>[0m [1m./configure --disable-silent-rules --disable-nls[0m
+[34m==>[0m [1mmake check[0m
+[34m==>[0m [1mmake install[0m
+🍺  /usr/local/Cellar/xz/5.8.2: 96 files, 2.6MB, built in 1 minute 1 second
+==> Installing python@3.11
+[34m==>[0m [1mPatching[0m
+[34m==>[0m [1mApplying 3.11-sysconfig.diff[0m
+[34m==>[0m [1mApplying 3.10-distutils-scheme.diff[0m
+[34m==>[0m [1m./configure --enable-ipv6 --datarootdir=/usr/local/Cellar/python@3.11/3.11.1[0m
+[34m==>[0m [1mmake[0m
+[34m==>[0m [1mmake altinstall PYTHONAPPSDIR=/usr/local/Cellar/python@3.11/3.11.14_3[0m
+[34m==>[0m [1mmake frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python@3.11/3.11[0m
+[34m==>[0m [1m/usr/local/Cellar/python@3.11/3.11.14_3/bin/python3.11 -m venv /private/tmp/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+[34m==>[0m [1m/private/tmp/pythonA3.11-20260212-44420-rq18uk/Python-3.11.14/whl_build/bin/[0m
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/2to3-3.11
+Target /usr/local/bin/2to3-3.11
+already exists. You may want to remove it:
+  rm '/usr/local/bin/2to3-3.11'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite python@3.11
+
+To list all files that would be deleted:
+  brew link --overwrite python@3.11 --dry-run
+
+Possible conflicting files are:
+/usr/local/bin/2to3-3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/2to3-3.11
+/usr/local/bin/idle3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/idle3.11
+/usr/local/bin/pydoc3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/pydoc3.11
+/usr/local/bin/python3.11 -> /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
+/usr/local/bin/python3.11-config -> /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11-config
+Warning: The post-install step did not complete successfully
+You can try again using:
+  brew postinstall python@3.11
+==> Caveats
+Python is installed as
+  /usr/local/bin/python3.11
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.11`, `python3.11-config`, `pip3.11` etc., respectively, are installed into
+  /usr/local/opt/python@3.11/libexec/bin
+
+You can install Python packages with
+  pip3.11 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.11/site-packages
+
+`idle3.11` requires tkinter, which is available separately:
+  brew install python-tk@3.11
+
+gdbm (`dbm.gnu`) is no longer included in this formula, but it is available separately:
+  brew install python-gdbm@3.11
+`dbm.ndbm` changed database backends in Homebrew Python 3.11.
+If you need to read a database from a previous Homebrew Python created via `dbm.ndbm`,
+you'll need to read your database using the older version of Homebrew Python and convert to another format.
+`dbm` still defaults to `dbm.gnu` when it is installed.
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+For more information about Homebrew and Python, see: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /usr/local/Cellar/python@3.11/3.11.14_3: 8,516 files, 210.2MB, built in 11 minutes 53 seconds
+==> Running `brew cleanup python@3.11`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--3.11.14.tgz... (26.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--flit-core--3.12.0.tar.gz... (53.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--packaging--26.0.tar.gz... (143.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--patch--8bfe417c815da4ca2c0a2457ce7ef81bc9dae310e20e4fb36235901ea4be1658.diff... (1.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--patch--d1a29b3c9ecf8aecd65e1e54efc42fb1422b2f5d05cba0c747178f4ef8a69683.diff... (637B)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--pip--26.0.tar.gz... (1.8MB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--setuptools--80.10.2.tar.gz... (1.2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.11--wheel--0.46.3.tar.gz... (60.6KB)
+==> `brew cleanup` has not been run in the last 30 days, running now...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Removing: /Users/admin/Library/Caches/Homebrew/bison_bottle_manifest--3.8.2... (13.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/bison--3.8.2... (1.1MB)
+Removing: /usr/local/Cellar/ca-certificates/2025-05-20... (4 files, 231.2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/ca-certificates_bottle_manifest--2025-05-20... (2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/ca-certificates--2025-05-20... (129.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/cairo--1.18.4.tar.xz... (32.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/expat--2.7.1.tar.lz... (494.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/fontconfig--2.16.0.tar.xz... (1.3MB)
+Removing: /Users/admin/Library/Caches/Homebrew/freetype_bottle_manifest--2.13.3... (12KB)
+Removing: /Users/admin/Library/Caches/Homebrew/freetype--2.13.3... (992.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/gettext--0.25.tar.gz... (30.8MB)
+Removing: /Users/admin/Library/Caches/Homebrew/glib--2.84.2.tar.xz... (5.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/icu4c@77--77.1.tgz... (27.4MB)
+Removing: /Users/admin/Library/Caches/Homebrew/jansson--2.14.1.tar.gz... (615.0KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libpng--1.6.48.tar.xz... (1MB)
+Removing: /Users/admin/Library/Caches/Homebrew/libunistring--1.3.tar.gz... (5.0MB)
+Removing: /Users/admin/Library/Caches/Homebrew/libx11--1.8.12.tar.gz... (3.2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxau--1.0.12.tar.xz... (282.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxcb--1.17.0.tar.xz... (455.2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxdmcp_bottle_manifest--1.1.5... (10.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxdmcp--1.1.5... (36.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxext_bottle_manifest--1.3.6... (15KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxext--1.3.6... (109.0KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libxrender--0.9.12.tar.gz... (450KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lzip--1.25.tar.gz... (115.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lzo_bottle_manifest--2.10... (15.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lzo--2.10... (152.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/m4--1.4.20.tar.xz... (2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/meson_bottle_manifest--1.8.0... (4.9KB)
+Removing: /Users/admin/Library/Caches/Homebrew/meson--1.8.0... (883.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/mpdecimal--4.0.1.tar.gz... (316.3KB)
+Removing: /Users/admin/Library/Caches/Homebrew/ninja--1.12.1.tar.gz... (240.5KB)
+Removing: /usr/local/Cellar/openssl@3/3.5.0... (7,554 files, 37.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/openssl@3--3.5.0.tar.gz... (53.1MB)
+Removing: /Users/admin/Library/Caches/Homebrew/pcre2--10.45.tar.bz2... (2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/pixman--0.46.0.tar.gz... (826.9KB)
+Removing: /usr/local/Cellar/pkgconf/2.4.3... (27 files, 434.3KB)
+Removing: /Users/admin/Library/Caches/Homebrew/pkgconf--2.4.3.tar.xz... (321.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/python-setuptools_bottle_manifest--80.8.0... (2.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/python-setuptools--80.8.0... (2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/python@3.13--setuptools--80.7.1.tar.gz... (1.3MB)
+Removing: /usr/local/Cellar/readline/8.2.13... (51 files, 1.7MB)
+Removing: /Users/admin/Library/Caches/Homebrew/readline_bottle_manifest--8.2.13... (11.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/readline--8.2.13... (563.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/readline--patch--21f0a03106dbe697337cd25c70eb0edbaa2bdb6d595b45f83285cdd35bac84de... (1.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/readline--patch--72dee13601ce38f6746eb15239999a7c56f8e1ff5eb1ec8153a1f213e4acdb29... (2.3KB)
+Removing: /Users/admin/Library/Caches/Homebrew/readline--patch--e27364396ba9f6debf7cbaaf1a669e2b2854241ae07f7eca74ca8a8ba0c97472... (1.6KB)
+Removing: /usr/local/Cellar/sqlite/3.49.2... (13 files, 4.9MB)
+Removing: /Users/admin/Library/Caches/Homebrew/sqlite--3.49.2.tar.gz... (3.2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/sqlite--3.51.2.tar.gz... (3.2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/util-macros--1.20.2.tar.xz... (83.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xcb-proto_bottle_manifest--1.17.0-1... (2.0KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xcb-proto--1.17.0... (125KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xorgproto_bottle_manifest--2024.1... (18.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xorgproto--2024.1... (716.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xtrans_bottle_manifest--1.6.0... (1.9KB)
+Removing: /Users/admin/Library/Caches/Homebrew/xtrans--1.6.0... (80.2KB)
+Removing: /usr/local/Cellar/xz/5.8.1... (96 files, 2.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/xz--5.8.1.tar.gz... (2.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/libserdes--8.0.0... (33.0KB)
+Removing: /Users/admin/Library/Caches/Homebrew/kcat_bottle_manifest--1.7.0... (29.3KB)
+Removing: /Users/admin/Library/Caches/Homebrew/gobject-introspection--markdown--3.8.tar.gz... (360.9KB)
+Removing: /Users/admin/Library/Caches/Homebrew/giflib_bottle_manifest--5.2.2... (9.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/graphite2_bottle_manifest--1.3.14... (13.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/harfbuzz--11.2.1.tar.gz... (35.1MB)
+Removing: /Users/admin/Library/Caches/Homebrew/harfbuzz--homebrew-test-ttf--630.ttf... (3.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lzlib--1.15.tar.gz... (115.2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/openjdk@11--11.0.27.tar.gz... (116.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/gobject-introspection--setuptools--80.7.1.tar.gz... (1.3MB)
+Removing: /Users/admin/Library/Caches/Homebrew/yajl--2.1.0... (63.9KB)
+Removing: /Users/admin/Library/Caches/Homebrew/little-cms2--2.17.tar.gz... (5.2MB)
+Removing: /Users/admin/Library/Caches/Homebrew/autoconf--2.72... (1MB)
+Removing: /Users/admin/Library/Caches/Homebrew/avro-c--1.11.3... (434.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/kcat--1.7.0... (35.2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/graphite2--1.3.14... (95.1KB)
+Removing: /Users/admin/Library/Caches/Homebrew/portable-ruby-3.4.3.el_capitan.bottle.tar.gz... (11.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/snappy--1.2.2.tar.gz... (1.1MB)
+Removing: /Users/admin/Library/Caches/Homebrew/giflib--5.2.2... (155.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/avro-c_bottle_manifest--1.11.3... (12.4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/pip_cache... (8 files, 2.9MB)
+Removing: /Users/admin/Library/Caches/Homebrew/openjdk@11--boot-jdk--11.0.2_osx.tar.gz... (182.7MB)
+Removing: /Users/admin/Library/Caches/Homebrew/gobject-introspection--markupsafe--3.0.2.tar.gz... (20.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lz4--1.10.0... (308.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/lz4_bottle_manifest--1.10.0-1... (11.6KB)
+Removing: /Users/admin/Library/Caches/Homebrew/autoconf_bottle_manifest--2.72-1... (16.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/cmake--4.0.2.tar.gz... (11.8MB)
+Removing: /Users/admin/Library/Caches/Homebrew/zstd--1.5.7.tar.gz... (2.5MB)
+Removing: /Users/admin/Library/Caches/Homebrew/portable-ruby-3.4.4.el_capitan.bottle.tar.gz... (11.6MB)
+Removing: /Users/admin/Library/Caches/Homebrew/apache-spark_bottle_manifest--3.5.5... (5.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/libtiff--4.7.0.tar.gz... (3.9MB)
+Removing: /Users/admin/Library/Caches/Homebrew/libserdes_bottle_manifest--8.0.0... (19.9KB)
+Removing: /Users/admin/Library/Caches/Homebrew/librdkafka--2.10.0.tar.gz... (4.8MB)
+Removing: /Users/admin/Library/Caches/Homebrew/portable-ruby-3.4.8.catalina.bottle.tar.gz... (11.9MB)
+Removing: /Users/admin/Library/Caches/Homebrew/jpeg-turbo--3.1.0.tar.gz... (2.5MB)
+Removing: /Users/admin/Library/Caches/Homebrew/yajl_bottle_manifest--2.1.0-4... (15.7KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/cmake.rb... (3.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/jansson.rb... (1.8KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/librdkafka.rb... (2KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/lzlib.rb... (2.0KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/snappy.rb... (4KB)
+Removing: /Users/admin/Library/Caches/Homebrew/api-source/Homebrew/homebrew-core/c181fafc683801c9b9fc7d9904b2cc23a9b66896/Formula/zstd.rb... (3.5KB)
+Removing: /Users/admin/Library/Caches/Homebrew/bootsnap/f051371fd34c755f742ffc1f1351f9dc324a1ee9388775c4006683b5559caa89... (576 files, 4.9MB)
+Removing: /Users/admin/Library/Logs/Homebrew/jansson... (6 files, 201.5KB)
+Removing: /Users/admin/Library/Logs/Homebrew/lzip... (6 files, 12.1KB)
+Removing: /Users/admin/Library/Logs/Homebrew/libxau... (7 files, 236KB)
+Removing: /Users/admin/Library/Logs/Homebrew/libpng... (8 files, 186.4KB)
+Removing: /Users/admin/Library/Logs/Homebrew/pixman... (7 files, 402.0KB)
+Removing: /Users/admin/Library/Logs/Homebrew/mpdecimal... (7 files, 124.2KB)
+Removing: /Users/admin/Library/Logs/Homebrew/cmake... (16 files, 3.4MB)
+Removing: /Users/admin/Library/Logs/Homebrew/python@3.13... (17 files, 5.5MB)
+Removing: /Users/admin/Library/Logs/Homebrew/libunistring... (9 files, 9.4MB)
+Removing: /Users/admin/Library/Logs/Homebrew/expat... (6 files, 230.7KB)
+Removing: /Users/admin/Library/Logs/Homebrew/glib... (18 files, 8.2MB)
+Removing: /Users/admin/Library/Logs/Homebrew/libxcb... (7 files, 730.9KB)
+Removing: /Users/admin/Library/Logs/Homebrew/util-macros... (4 files, 9KB)
+Removing: /Users/admin/Library/Logs/Homebrew/cairo... (7 files, 4.5MB)
+Removing: /Users/admin/Library/Logs/Homebrew/gobject-introspection... (3 files, 3.5KB)
+Removing: /Users/admin/Library/Logs/Homebrew/ninja... (3 files, 108.6KB)
+Removing: /Users/admin/Library/Logs/Homebrew/fontconfig... (7 files, 550.7KB)
+Removing: /Users/admin/Library/Logs/Homebrew/libxrender... (7 files, 259.3KB)
+Removing: /Users/admin/Library/Logs/Homebrew/ca-certificates... (64B)
+Removing: /Users/admin/Library/Logs/Homebrew/gettext... (13 files, 13.4MB)
+Removing: /Users/admin/Library/Logs/Homebrew/m4... (7 files, 2.8MB)
+Removing: /Users/admin/Library/Logs/Homebrew/pcre2... (7 files, 401KB)
+Removing: /Users/admin/Library/Logs/Homebrew/libx11... (7 files, 4.9MB)
+Removing: /Users/admin/Library/Logs/Homebrew/icu4c@77... (7 files, 1.9MB)
+Pruned 1 symbolic links and 2 directories from /usr/local
+==> Caveats
+==> python@3.11
+Python is installed as
+  /usr/local/bin/python3.11
+
+Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+`python3.11`, `python3.11-config`, `pip3.11` etc., respectively, are installed into
+  /usr/local/opt/python@3.11/libexec/bin
+
+You can install Python packages with
+  pip3.11 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.11/site-packages
+
+`idle3.11` requires tkinter, which is available separately:
+  brew install python-tk@3.11
+
+gdbm (`dbm.gnu`) is no longer included in this formula, but it is available separately:
+  brew install python-gdbm@3.11
+`dbm.ndbm` changed database backends in Homebrew Python 3.11.
+If you need to read a database from a previous Homebrew Python created via `dbm.ndbm`,
+you'll need to read your database using the older version of Homebrew Python and convert to another format.
+`dbm` still defaults to `dbm.gnu` when it is installed.
+
+If you do not need a specific version of Python, and always want Homebrew's `python3` in your PATH:
+  brew install python3
+
+For more information about Homebrew and Python, see: https://docs.brew.sh/Homebrew-and-Python
+✅ pip обновлен.
+📦 Устанавливаю Python-зависимости...
+⏳ Устанавливаю django...
+Collecting django
+  Downloading django-6.0.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting asgiref>=3.9.1 (from django)
+  Downloading asgiref-3.11.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.5.0 (from django)
+  Downloading sqlparse-0.5.5-py3-none-any.whl.metadata (4.7 kB)
+Downloading django-6.0.2-py3-none-any.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 2.7 MB/s  0:00:03
+Downloading asgiref-3.11.1-py3-none-any.whl (24 kB)
+Downloading sqlparse-0.5.5-py3-none-any.whl (46 kB)
+Installing collected packages: sqlparse, asgiref, django
+
+Successfully installed asgiref-3.11.1 django-6.0.2 sqlparse-0.5.5
+✅ Библиотека torch уже есть.
+✅ Библиотека torchvision уже есть.
+⏳ Устанавливаю pillow...
+Requirement already satisfied: pillow in /opt/anaconda3/lib/python3.12/site-packages (10.4.0)
+--- Проверка завершена успешно! Подробности в install.log ---
