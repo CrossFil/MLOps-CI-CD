@@ -1,25 +1,27 @@
-# ML Inference Service: Docker Optimization
+# MLOps Lesson 3: Docker Optimization & Compose
 
-## This repository contains a PyTorch-based image classification service optimized for production using Docker.
+## Task Objective: Create a script to install Docker, Docker Compose, Python, and ML dependencies, then containerize a model with size optimization.
 
 ### 1. Quick Start
 - Environment Setup: chmod +x install_dev_tools.sh && ./install_dev_tools.sh
 
 - Prepare Model: python3 export_model.py
 
-- Run Optimized Docker: docker build -t ml-slim -f Dockerfile.slim . docker run --rm -v $(pwd):/app ml-slim example.jpg
+- Run via Docker Compose: docker-compose run classifier
 
 ### 2. Performance Comparison
-- Fat Image: 8.53 GB (Standard Python base)
+- Fat Image: 8.53 GB (Full Python base)
 - Slim Image: 1.10 GB (Multi-stage + CPU-only Torch)
 
-Key Achievement: Reduced image size by 87% (7.4 GB saved) using multi-stage builds and specialized PyTorch distributions.
+- Key Achievement: Reduced image size by 87% (7.4 GB saved) using multi-stage builds.
 
 ### 3. Repository Structure
-- inference.py: Top-3 prediction script.
+- install_dev_tools.sh: Automated environment setup script.
 
-- export_model.py: TorchScript model exporter.
+- docker-compose.yml: Orchestration for easy container launch.
 
-- Dockerfile.slim: Optimized multi-stage build.
+- inference.py: Image classification script.
 
-- comparison.txt: Full optimization report.
+- Dockerfile.slim: Optimized production-ready image.
+
+- comparison.txt: Image size analysis report.
