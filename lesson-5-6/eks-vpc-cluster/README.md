@@ -20,23 +20,31 @@ eks-vpc-cluster/
     ├── main.tf
     ├── variables.tf
     └── outputs.tf
-Managed Node Groups
+```
+
+## Managed Node Groups
+
 The cluster utilizes AWS Managed Node Groups with t3.micro instances to stay within cost-effective boundaries:
 
-cpu_nodes: Dedicated for general-purpose workloads.
+- cpu_nodes: Dedicated for general-purpose workloads.
 
-gpu_nodes: Provisioned for specialized compute tasks (logical separation).
+- gpu_nodes: Provisioned for specialized compute tasks (logical separation).
 
-Verification Steps
+## Verification Steps
 Post-deployment, connectivity was verified using the following steps:
 
 Update Kubeconfig:
-`aws eks --region eu-central-1 update-kubeconfig --name mlops-eks`
+- `aws eks --region eu-central-1 update-kubeconfig --name mlops-eks`
 
 Verify Node Status:
-`kubectl get nodes`
+- `kubectl get nodes`
 All nodes confirmed in 'Ready' state before teardown.
-
-Resource Cleanup
+(base) admin@CrossFil-MBP eks-vpc-cluster % kubectl get nodes
+```text
+NAME                                          STATUS   ROLES    AGE     VERSION
+ip-10-0-2-219.eu-central-1.compute.internal   Ready    <none>   2m35s   v1.29.15-eks-ecaa3a6
+ip-10-0-2-242.eu-central-1.compute.internal   Ready    <none>   2m35s   v1.29.15-eks-ecaa3a6
+```
+## Resource Cleanup
 To avoid unnecessary AWS charges (specifically for EKS Control Plane and NAT Gateway), the environment is decommissioned using:
-`terraform destroy`
+- `terraform destroy`
