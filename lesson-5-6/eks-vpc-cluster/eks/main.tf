@@ -6,7 +6,6 @@ module "eks" {
   version = "~> 19.0"
 
   cluster_name    = "mlops-eks"
-  # Поднимаем версию до 1.29 (она точно поддерживается)
   cluster_version = "1.29"
 
   vpc_id                         = var.vpc_id
@@ -27,6 +26,4 @@ module "eks" {
       instance_types = ["t3.micro"]
     }
   }
-
-  # Убираем старый параметр auth, чтобы избежать лишних ошибок
 }
