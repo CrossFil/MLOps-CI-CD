@@ -8,14 +8,13 @@ RUN pip install --no-cache-dir --prefix=/install pillow
 FROM python:3.11-slim
 WORKDIR /app
 
-# Системные библиотеки для Pillow
+# Sys library for Pillow
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libglib2.0-0 libsm6 libxrender1 libxext6 \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Копируем только установленные пакеты
 COPY --from=builder /install /usr/local
-# Копируем только то, что нужно для работы
+
 COPY inference.py .
 COPY model.pt .
 
