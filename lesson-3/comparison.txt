@@ -1,18 +1,22 @@
-# Сравнение Docker-образов для PyTorch инференса
+# Comparison of Docker Images for PyTorch Inference
 
-1. Размер образов:
-   - Fat-образ (Dockerfile.fat): 8.53 GB
-   - Slim-образ (Dockerfile.slim): 1.1 GB
+1. Image Size:
 
-2. Анализ слоев:
-   - Fat-образ: использует базовый образ python:3.11 (Debian), включает в себя полные библиотеки CUDA/NVIDIA для GPU, которые весят несколько гигабайт, даже если не используются.
-   - Slim-образ: использует python:3.11-slim, multi-stage build и установку только CPU-версии PyTorch через --index-url.
+- Fat Image (Dockerfile.fat): 8.53 GB
+- Slim Image (Dockerfile.slim): 1.1 GB
 
-3. Лишние инструменты:
-   - В Fat-образе остались кэши pip и полные версии библиотек для разработки.
-   - В Slim-образе отсутствуют инструменты компиляции и кэши, оставлен только рантайм.
+2. Layer Analysis:
 
-4. Предложения по оптимизации:
-   - Использование более компактных базовых образов (например, distroless).
-   - Квантование модели (Quantization) для уменьшения размера самого файла model.pt.
-   - Удаление ненужных файлов внутри образа через .dockerignore.
+- Fat Image: Built on the python:3.11 (Debian) base image; includes full CUDA/NVIDIA GPU libraries that consume several gigabytes, even if not utilized.
+- Slim Image: Built on python:3.11-slim using a multi-stage build process and installing the CPU-only version of PyTorch via --index-url.
+
+3. Redundant Tools:
+
+- Fat Image: Retains pip caches and full development/build libraries.
+- Slim Image: Excludes compilation tools and caches, leaving only the essential runtime environment.
+
+# Optimization Recommendations:
+
+- Transition to even more compact base images (e.g., distroless).
+- Implement Model Quantization to reduce the footprint of the model.pt file itself.
+- Utilize a .dockerignore file to ensure unnecessary local files are not copied into the image.
