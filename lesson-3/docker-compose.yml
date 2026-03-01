@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile.slim
+    volumes:
+      - .:/app
+    command: ["example.jpg"]
