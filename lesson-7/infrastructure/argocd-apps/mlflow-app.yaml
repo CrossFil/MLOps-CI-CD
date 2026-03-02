@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mlflow-tracking-server
+  namespace: infra-tools
+spec:
+  project: default
+  source:
+    repoURL: 'https://community-charts.github.io/helm-charts' # Helm repository URL
+    chart: mlflow # Chart name
+    targetRevision: 0.7.19 # Chart version
+    helm:
+      # Inline values (Option A from your task)
+      values: |
+        service:
+          type: ClusterIP
+          port: 5000
+        backendStore:
+          type: SQLAlchemy
+        defaultArtifactRoot: s3://mlflow-artifacts
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: application # Target namespace for MLflow
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

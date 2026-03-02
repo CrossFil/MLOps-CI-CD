@@ -1,0 +1,4 @@
+# ArgoCD Helm chart custom values
+server:
+  service:
+    type: ClusterIP
