@@ -43,4 +43,4 @@ To open the MLflow UI:
 
 ## 6. Repository Link
 The main application manifest can be found here:
-[application.yaml](https://github.com/CrossFil/MLOps-CI-CD/main/lesson-7/ArgoCD/application.yaml)
+[application.yaml](./infrastructure/argocd-apps/application.yaml)
