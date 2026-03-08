@@ -52,6 +52,8 @@ spec:
               value: "eu-central-1"
             - name: MLFLOW_S3_IGNORE_TLS
               value: "true"
+            - name: MLFLOW_S3_ADDRESSING_STYLE
+              value: "path"
             - name: BOTO_PATH
               value: "/dev/null"
           ports:
