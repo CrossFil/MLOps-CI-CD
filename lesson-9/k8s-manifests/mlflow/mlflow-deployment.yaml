@@ -33,6 +33,30 @@ spec:
           command: ["/bin/sh", "-c"]
           args:
             - |
+              pip install psycopg2-binary boto3 &&
+              mlflow server \
+              --host 0.0.0.0 \
+              --port 5000 \
+              --backend-store-uri postgresql://mlflowuser:mlflowpass@postgres:5432/mlflowdb \
+              --default-artifact-root s3://mlflow/ \
+              --artifacts-destination s3://mlflow/
+          env:
+            - name: AWS_ACCESS_KEY_ID
+              value: minioadmin
+            - name: AWS_SECRET_ACCESS_KEY
+              value: minioadmin
+            - name: MLFLOW_S3_ENDPOINT_URL
+              value: http://minio:9000
+            - name: MLFLOW_S3_IGNORE_TLS
+              value: "true"
+          ports:
+            - containerPort: 5000
+      containers:
+        - name: mlflow
+          image: ghcr.io/mlflow/mlflow:v2.10.2
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
               pip install psycopg2-binary &&
               mlflow server \
               --host 0.0.0.0 \
