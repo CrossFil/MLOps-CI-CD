@@ -4,8 +4,13 @@ metadata:
   name: aiops-prometheus
   namespace: monitoring
 spec:
-  serviceMonitorNamespaceSelector: {} 
+  serviceAccountName: prometheus-stack-kube-prom-prometheus
+
   serviceMonitorSelector: {}
+  podMonitorSelector: {}
+  ruleSelector: {}
+  serviceMonitorNamespaceSelector: {}
+  podMonitorNamespaceSelector: {}
   resources:
     requests:
       memory: 400Mi
