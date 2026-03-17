@@ -3,6 +3,9 @@ kind: Prometheus
 metadata:
   name: prometheus-stack-kube-prom-prometheus
   namespace: monitoring
+  labels:
+    app: kube-prometheus-stack-prometheus  
+    release: prometheus-stack        
 spec:
   serviceAccountName: prometheus-stack-kube-prom-prometheus
   serviceMonitorSelector:
@@ -11,4 +14,3 @@ spec:
   resources:
     requests:
       memory: 400Mi
-  enableAdminAPI: false
