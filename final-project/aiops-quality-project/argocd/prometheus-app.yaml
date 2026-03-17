@@ -9,18 +9,16 @@ spec:
     repoURL: https://prometheus-community.github.io/helm-charts
     chart: kube-prometheus-stack
     targetRevision: 62.0.0
+    helm:
+      parameters:
+        - name: prometheusOperator.createCustomResourceCustomProxy
+          value: "false"
+        - name: crds.enabled
+          value: "false"
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
-  ignoreDifferences:
-    - group: apiextensions.k8s.io
-      kind: CustomResourceDefinition
-      jsonPointers:
-        - /metadata/annotations/kubectl.kubernetes.io~1last-applied-configuration
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
     syncOptions:
       - CreateNamespace=true
       - ServerSideApply=true
