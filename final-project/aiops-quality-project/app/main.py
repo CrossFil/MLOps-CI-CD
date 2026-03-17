@@ -1,51 +1,56 @@
 # FastAPI‑inference
 import pickle
 import numpy as np
-from fastapi import FastAPI
+from fastapi import FastAPI, Response  
 from pydantic import BaseModel
 import logging
-from alibi_detect.cd import KSDrift 
+from alibi_detect.cd import KSDrift
+
+from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("aiops-service")
 
 app = FastAPI()
 
+DRIFT_COUNTER = Counter('drift_detected_total', 'Total number of detected drift events')
+
+
 class InputData(BaseModel):
     feature_value: float
 
 model = None
 drift_detector = None
-# reference data
 reference_data = np.array([[1.0], [2.0], [3.0], [4.0], [5.0]])
+
 
 @app.on_event("startup")
 def load_resources():
     global model, drift_detector
-    # 1. load model
     with open('model/model.pkl', 'rb') as f:
         model = pickle.load(f)
-    
-    # 2. initializing the drift detector
-    # p_val 0.05 means 95% confidence in the presence of drift
     drift_detector = KSDrift(reference_data, p_val=0.05)
     logger.info("Model and Drift Detector loaded")
 
+
+
+@app.get("/metrics")
+def metrics():
+    return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
+
+
 @app.post("/predict")
 async def predict(data: InputData):
-    # conver the input value into the detector format
     x = np.array([[data.feature_value]])
-    
-    # drift check
     drift_result = drift_detector.predict(x)
     is_drift = int(drift_result['data']['is_drift'])
-    
+
     if is_drift:
         logger.warning("!!! DRIFT DETECTED !!!")
-        # Тут ми пізніше додамо виклик GitHub Actions
-    
+        DRIFT_COUNTER.inc()
+
     prediction = data.feature_value * model.get("coefficient", 1.0)
-    
+
     return {
         "prediction": prediction,
         "drift": bool(is_drift),
