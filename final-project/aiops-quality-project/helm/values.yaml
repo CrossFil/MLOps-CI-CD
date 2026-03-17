@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: crossfil/aiops-service
-  pullPolicy: IfNotPresent
-  tag: "v1"
+  repository: crossfil/aiops-quality-project  
+  tag: latest                                 
+  pullPolicy: Always                          
 
 service:
   type: ClusterIP
