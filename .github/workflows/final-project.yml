@@ -1,1 +1,64 @@
 
+name: MLOps Final Project CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: 
+  repository_dispatch: 
+    types: [retrain_trigger]
+
+jobs:
+  train-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r final-project/aiops-quality-project/app/requirements.txt
+          # Додай сюди бібліотеки для тренування, якщо вони відрізняються
+
+      - name: Run Retrain Script
+        run: |
+          cd final-project/aiops-quality-project/
+          python model/train.py
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and Push Docker Image
+        run: |
+          # Генеруємо унікальний тег на основі SHA коміту
+          TAG=${{ github.sha }}
+          IMAGE_NAME=crossfil/aiops-quality-project
+          
+          docker build -t $IMAGE_NAME:$TAG -f final-project/aiops-quality-project/Dockerfile final-project/aiops-quality-project/
+          docker push $IMAGE_NAME:$TAG
+          docker tag $IMAGE_NAME:$TAG $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:latest
+
+      - name: Update Helm Chart Image Tag
+        run: |
+          TAG=${{ github.sha }}
+          # Використовуємо sed для заміни тега в values.yaml
+          sed -i "s/tag:.*/tag: $TAG/g" final-project/aiops-quality-project/helm/values.yaml
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add final-project/aiops-quality-project/helm/values.yaml
+          git commit -m "Auto-update model/image tag to ${{ github.sha }} [skip ci]"
+          git push
