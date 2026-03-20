@@ -4,3 +4,4 @@ pydantic
 numpy
 alibi-detect
 prometheus_client
+httpx
