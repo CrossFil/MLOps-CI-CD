@@ -69,6 +69,9 @@ def metrics():
 
 @app.post("/predict")
 async def predict(data: InputData):
+    # ЛОГУВАННЯ ДЛЯ LOKI (структурований вигляд)
+    logger.info(f"Inference request: data={data.dict()}") 
+    
     x = np.array([[data.feature_value]])
     drift_result = drift_detector.predict(x)
     is_drift = int(drift_result['data']['is_drift'])
