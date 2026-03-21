@@ -14,12 +14,11 @@ logger = logging.getLogger("aiops-service")
 
 app = FastAPI()
 
-# Конфігурація GitHub 
+# GitHub config
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN") 
 REPO_OWNER = "CrossFil"
 REPO_NAME = "MLOps-CI-CD"
 EVENT_TYPE = "retrain_trigger" 
-
 DRIFT_COUNTER = Counter('drift_detected_total', 'Total number of detected drift events')
 
 class InputData(BaseModel):
@@ -41,7 +40,7 @@ def load_resources():
         logger.error(f"Error loading resources: {e}")
 
 async def trigger_retrain():
-    """Функція для запуску GitHub Action"""
+    """GitHub Action run function"""
     if not GITHUB_TOKEN:
         logger.error("GITHUB_TOKEN not set. Cannot trigger retrain.")
         return
@@ -69,7 +68,7 @@ def metrics():
 
 @app.post("/predict")
 async def predict(data: InputData):
-    # ЛОГУВАННЯ ДЛЯ LOKI (структурований вигляд)
+    # logging for LOKI
     logger.info(f"Inference request: data={data.dict()}") 
     
     x = np.array([[data.feature_value]])
@@ -79,10 +78,10 @@ async def predict(data: InputData):
     if is_drift:
         logger.warning("!!! DRIFT DETECTED !!!")
         DRIFT_COUNTER.inc()
-        # ТРИГЕР: Запускаємо ретрейн асинхронно
+        # TRIGGER: run retrain asynchronously
         await trigger_retrain()
 
-    # Примітивна логіка прогнозу
+    # Primitive prediction logic
     prediction = data.feature_value * model.get("coefficient", 1.0)
 
     return {
