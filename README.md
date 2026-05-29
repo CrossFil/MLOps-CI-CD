@@ -1,6 +1,5 @@
-# MLOps Module — Summary
+# DevOps/MLOps Module — Summary
 
-**Repository:** [CrossFil/MLOps-CI-CD](https://github.com/CrossFil/MLOps-CI-CD)  
 **Final project:** `final-project/aiops-quality-project`
 
 ---
